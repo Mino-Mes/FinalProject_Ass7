@@ -1,0 +1,56 @@
+﻿@model FinalProject_Ass7.Models.DB
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Truck Fuel Trip Index</h2>
+
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    @Html.Label("Enter Truck Number")
+    @Html.TextBox("truckNumber", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Enter Driver Number")
+    @Html.TextBox("driverNumber", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Enter Co-Driver Number (if none leave empty)")
+    @Html.TextBox("coNumber", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Trip Number")
+    @Html.TextBox("tripNumber", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Date Departed")
+    @Html.TextBox("dateD", null, new { @class = "textbox", type = "date" })
+    <br />
+    @Html.Label("Date Returned")
+    @Html.TextBox("dateR", null, new { @class = "textbox", type = "date" })
+    <br />
+    @Html.Label("State Code")
+    @Html.TextBox("sc", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Miles Driven")
+    @Html.TextBox("miles", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Fuel Receipt Number")
+    @Html.TextBox("fuelNumber", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Gallon Purchased")
+    @Html.TextBox("gallon", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Taxes Paid")
+    @Html.TextBox("taxes", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Station Name")
+    @Html.TextBox("stationName", null, new { @class = "textbox" })
+    <br />
+    @Html.Label("Station Location")
+    @Html.TextBox("stationLocation", null, new { @class = "textbox" })
+    <br />
+
+    <input type="submit" value="Submit" />
+}
+
+
+
